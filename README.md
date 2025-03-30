@@ -34,20 +34,19 @@ The dataset contains hourly electricity consumption and production data from Rom
 **Models Implemented**
 
 1. **ARIMA Model**
+   
 -Parameters: (1,2,1)
-
 -Differencing: Second-order to achieve stationarity
 
 2.**SARIMA Model**
--Parameters: (0,1,0)(1,1,1,12)
 
+-Parameters: (0,1,0)(1,1,1,12)
 -Handles both trend and seasonality
 
 3. **LSTM Model**
+   
 -Architecture: 50-unit LSTM layer
-
 -Training: 50 epochs with batch size 32
-
 -Sequence length: 12 months
 
 ## Key Findings:
