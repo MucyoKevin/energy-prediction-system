@@ -3,9 +3,11 @@
 ## Project Overview
 
 This project forecasts Romania's electricity consumption using historical data from January 2019 to March 2024. We compare three time-series forecasting approaches:
+
 - **ARIMA (AutoRegressive Integrated Moving Average)**
 - **SARIMA (Seasonal ARIMA)**
 - **LSTM (Long Short-Term Memory neural networks)**
+
 The goal is to determine the most accurate method for predicting energy consumption patterns to support grid management and resource planning.
 
 ## Dataset
@@ -20,7 +22,7 @@ The dataset contains hourly electricity consumption and production data from Rom
 
 ## Methodology
 
-*Data Preparation*
+**Data Preparation**
   1. Loaded and aggregated hourly data to monthly sums
 
   2. Performed exploratory analysis to identify trends and seasonality
@@ -29,24 +31,24 @@ The dataset contains hourly electricity consumption and production data from Rom
 
   4. Applied differencing to make data stationary
 
-*Models Implemented*
+**Models Implemented**
 
-1. *ARIMA Model*
-Parameters: (1,2,1)
+1. **ARIMA Model**
+-Parameters: (1,2,1)
 
-Differencing: Second-order to achieve stationarity
+-Differencing: Second-order to achieve stationarity
 
-2. *SARIMA Model*
-Parameters: (0,1,0)(1,1,1,12)
+2.**SARIMA Model**
+-Parameters: (0,1,0)(1,1,1,12)
 
-Handles both trend and seasonality
+-Handles both trend and seasonality
 
-3. *LSTM Model*
-Architecture: 50-unit LSTM layer
+3. **LSTM Model**
+-Architecture: 50-unit LSTM layer
 
-Training: 50 epochs with batch size 32
+-Training: 50 epochs with batch size 32
 
-Sequence length: 12 months
+-Sequence length: 12 months
 
 ## Key Findings:
 
